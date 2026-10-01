@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration form</title>
+</head>
+<body>
+
+  <header>
+    <h1>Student Registration Form</h1>
+  </header>
+
+  <section>
+    <form action="#" method="POST">
+      <!-- Full Name -->
+      <div>
+        <label for="full-name">Full Name:</label>
+        <br/>
+        <input type="text" id="full-name" name="fullName" placeholder="Enter your full name" required>
+      </div>
+      <br>
+
+      <!-- Email -->
+      <div>
+        <label for="user-email">Email:</label>
+        <br/>
+        <input type="email" id="user-email" name="email" placeholder="Enter your email" required>
+      </div>
+      <br>
+
+      <!-- Password -->
+      <div>
+        <label for="user-password">Password:</label>
+        <br/>
+        <input type="password" id="user-password" name="password" placeholder="Enter your password" required>
+      </div>
+      <br>
+
+      <!-- Gender Radio Group -->
+        <p>Gender:</p>
+         <label for="male"><input type="radio" id="male" name="gender" value="male" required>Male</label>
+         <label for="female"></label><input type="radio" id="female" name="gender" value="female">Female</label>
+
+      <!-- Skills Checkboxes -->
+      <div>
+        <p>Skills:</p>
+        <label for="html">HTML</label>
+        <input type="checkbox" id="html" name="skills" value="html">
+
+        <label for="css">CSS</label>
+        <input type="checkbox" id="css" name="skills" value="css">
+        
+        <label for="javascript">JavaScript</label>
+        <input type="checkbox" id="javascript" name="skills" value="javascript">
+        
+      </div>
+      <br>
+      <div>
+        <label for="dob">Date of Birth:</label>
+        <br/>
+        <input type="date">
+      </div>
+      <br/>
+
+      <!-- Submit Button -->
+      <button type="submit">Register</button>
+
+      <h1>Submitted Students (Dummy Data)</h1>
+      <table border="1" cellpadding="7">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Gender</th>
+            <th>Skills</th>
+            <th>DOB</th>
+        </tr>
+        <tr>
+            <td>Alice</td>
+            <td>alice@example.com</td>
+            <td>Female</td>
+            <td>HTML, CSS</td>
+            <td>2002-05-10</td>
+        </tr>
+        <tr>
+            <td>Bob</td>
+            <td>bob@example.com</td>
+            <td>Male</td>
+            <td>JavaScript</td>
+            <td>2001-11-22</td>
+        </tr>
+      </table>
+    </form>
+  </section>
+
+</body>
+</html>
